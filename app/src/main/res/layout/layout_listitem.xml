@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/gambar"/>
+
+    <TextView
+        android:id="@+id/nama_makanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gudeg"
+        android:layout_toRightOf="@id/gambar"
+        android:textColor="@color/item"
+        android:layout_marginLeft="35dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/deskripsi_makanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Makanan"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/item"
+        android:layout_toEndOf="@id/gambar"
+        android:layout_below="@id/nama_makanan"/>
+
+</RelativeLayout>
